@@ -20,5 +20,17 @@ return true;
 
 //Escribe una función que compruebe si una cadena de texto contiene todas las vocales.
 
+const alphabet = (text) => {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+    const LowerCaseText = text.toLowerCase();
+    for (let i = 0 ; i< letters.length; i++) {
+        if (!LowerCaseText.includes(letters[i])) {
+            return false;   
+        }
+    }
+    return true;
+};
+
+console.log(alphabet('hola'));
 
 
